@@ -4,7 +4,8 @@ a.append(12)
 a.append('gold')
 a.append(5.4)
 for x in a:
-  print(type(x))
+    print(type(x))
+
 
 # 2. Сортировка списка
 l = list(input("Введите элементы списка: "))
@@ -37,12 +38,12 @@ for element in items:
 if i > maxValue:
     items.insert(0, i)
 elif lastIndex >= 0:
-    items.insert(lastIndex +1, i)
+    items.insert(lastIndex + 1, i)
 else:
     items.append(i)
 print(items)
 
-#5. Список товаров
+# 5. Список товаров
 
 goods = []
 i = 1
@@ -52,7 +53,8 @@ for i in range(1, 4):
     costGoods = input("Введите цену товара в рублях: ")
     measureGoods = input("Введите единицы измерения товара (шт./ед./упаковки): ")
     countGoods = input("Введите количество товара: ")
-    goods.append((i, {"название": nameGoods, "стоимость": costGoods, "единицы измерения": measureGoods, "количество": countGoods}))
+    goods.append((i, {"название": nameGoods, "стоимость": costGoods, "единицы измерения": measureGoods,
+                      "количество": countGoods}))
 print(goods)
 
 nameGoods = []
