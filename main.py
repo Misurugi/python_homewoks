@@ -41,3 +41,36 @@ elif lastIndex >= 0:
 else:
     items.append(i)
 print(items)
+
+#5. Список товаров
+
+goods = []
+i = 1
+for i in range(1, 4):
+    print(f"ВВедите информацию об {i}м товаре")
+    nameGoods = input("Введите название товара: ")
+    costGoods = input("Введите цену товара в рублях: ")
+    measureGoods = input("Введите единицы измерения товара (шт./ед./упаковки): ")
+    countGoods = input("Введите количество товара: ")
+    goods.append((i, {"название": nameGoods, "стоимость": costGoods, "единицы измерения": measureGoods, "количество": countGoods}))
+print(goods)
+
+nameGoods = []
+costGoods = []
+measureGoods = []
+countGoods = []
+
+for i in goods:
+    nameGoods.append(i[1].get("название"))
+    costGoods.append(i[1].get("стоимость"))
+    measureGoods.append(i[1].get("единицы измерения"))
+    countGoods.append(i[1].get("количество"))
+
+report = {
+    "название": list(set(nameGoods)),
+    "стоимость": list(set(costGoods)),
+    "количество": list(set(countGoods)),
+    "единицы измерения": list(set(measureGoods))
+}
+
+print(f"Отчет по списку товаров: \n{report}")
