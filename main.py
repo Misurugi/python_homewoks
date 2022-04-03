@@ -12,6 +12,7 @@ l = list(input("Введите элементы списка: "))
 l[::2], l[1::2] = l[1::2], l[::2]
 print(l)
 
+
 # 3. Времена года
 seasons = {'Зима': (1, 2, 12),
            'Весна': (3, 4, 5),
@@ -22,6 +23,7 @@ month = int(input('Введите порядковый номер месяца: 
 for key in seasons.keys():
     if month in seasons[key]:
         print(key)
+
 
 # 4. Рейтинг
 i = int(input("Введите цифру своего рейтинга от 0 до 9: "))
@@ -42,6 +44,7 @@ elif lastIndex >= 0:
 else:
     items.append(i)
 print(items)
+
 
 # 5. Список товаров
 
@@ -76,3 +79,4 @@ report = {
 }
 
 print(f"Отчет по списку товаров: \n{report}")
+
