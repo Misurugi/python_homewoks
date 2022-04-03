@@ -10,5 +10,6 @@ from itertools import count
 for el in count(minX):
     if el > maxX:
         break
+
     else:
         print(el)
