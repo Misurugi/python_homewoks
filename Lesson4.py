@@ -30,4 +30,4 @@ from math import factorial
 def in_fact(agr_1):
   N = factorial (agr_1)
   return N
-print(in_fact(6))
+print(in_fact(5))
