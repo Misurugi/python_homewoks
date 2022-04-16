@@ -7,5 +7,6 @@ print("Размер премии, руб: ", third_param)
 x = int(first_param)
 y = int(second_param)
 z = int(third_param)
+
 result = (x * y) + z
 print(result)
