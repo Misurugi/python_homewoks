@@ -11,5 +11,6 @@ c = 0
 for el in cycle(first_param):
     if c > maxX:
         break
+
     print(el)
     c += 1
